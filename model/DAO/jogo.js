@@ -22,13 +22,13 @@ const insertJogo = async function(jogo){
                                         foto_capa,
                                         link
                                     ) values (
-                                        ${jogo.nome},
-                                        ${jogo.data_lancamento},
-                                        ${jogo.versao},
-                                        ${jogo.tamanho},
-                                        ${jogo.descricao},
-                                        ${jogo.foto_capa},
-                                        ${jogo.link}
+                                        '${jogo.nome}',
+                                        '${jogo.data_lancamento}',
+                                        '${jogo.versao}',
+                                        '${jogo.tamanho}',
+                                        '${jogo.descricao}',
+                                        '${jogo.foto_capa}',
+                                        '${jogo.link}'
                                     )`
 
     //Executa o Script SQL no BD e AGUARDA (AWAIT) o retorbo do BD
